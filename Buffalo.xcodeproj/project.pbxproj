@@ -15,6 +15,7 @@
 		7B6E7B2B1DE1B22400F11BF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6E7B291DE1B22400F11BF9 /* LaunchScreen.storyboard */; };
 		7B6E7B361DE1B22400F11BF9 /* BuffaloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6E7B351DE1B22400F11BF9 /* BuffaloTests.swift */; };
 		7B6E7B411DE1B22400F11BF9 /* BuffaloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6E7B401DE1B22400F11BF9 /* BuffaloUITests.swift */; };
+		7B7D389C1DE24877008C6D2F /* ServicesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7D389B1DE24877008C6D2F /* ServicesProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7B6E7B3C1DE1B22400F11BF9 /* BuffaloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuffaloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B6E7B401DE1B22400F11BF9 /* BuffaloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuffaloUITests.swift; sourceTree = "<group>"; };
 		7B6E7B421DE1B22400F11BF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B7D389B1DE24877008C6D2F /* ServicesProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +86,11 @@
 				7B6E7B3F1DE1B22400F11BF9 /* BuffaloUITests */,
 				7B6E7B1B1DE1B22300F11BF9 /* Products */,
 			);
+			indentWidth = 3;
 			sourceTree = "<group>";
+			tabWidth = 3;
+			usesTabs = 1;
+			wrapsLines = 0;
 		};
 		7B6E7B1B1DE1B22300F11BF9 /* Products */ = {
 			isa = PBXGroup;
@@ -99,13 +105,10 @@
 		7B6E7B1C1DE1B22400F11BF9 /* Buffalo */ = {
 			isa = PBXGroup;
 			children = (
-				7B6E7B1D1DE1B22400F11BF9 /* AppDelegate.swift */,
-				7B6E7B1F1DE1B22400F11BF9 /* ViewController.swift */,
-				7B6E7B211DE1B22400F11BF9 /* Main.storyboard */,
-				7B6E7B271DE1B22400F11BF9 /* Assets.xcassets */,
-				7B6E7B291DE1B22400F11BF9 /* LaunchScreen.storyboard */,
-				7B6E7B2C1DE1B22400F11BF9 /* Info.plist */,
-				7B6E7B241DE1B22400F11BF9 /* Buffalo.xcdatamodeld */,
+				7B7D38991DE247AB008C6D2F /* Heart */,
+				7B7D38971DE245D3008C6D2F /* Model */,
+				7B7D38961DE2412D008C6D2F /* Views & Controllers */,
+				7B7D38981DE245EE008C6D2F /* Supporting Files */,
 			);
 			path = Buffalo;
 			sourceTree = "<group>";
@@ -126,6 +129,50 @@
 				7B6E7B421DE1B22400F11BF9 /* Info.plist */,
 			);
 			path = BuffaloUITests;
+			sourceTree = "<group>";
+		};
+		7B7D38961DE2412D008C6D2F /* Views & Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7B6E7B291DE1B22400F11BF9 /* LaunchScreen.storyboard */,
+				7B6E7B211DE1B22400F11BF9 /* Main.storyboard */,
+				7B6E7B1F1DE1B22400F11BF9 /* ViewController.swift */,
+			);
+			path = "Views & Controllers";
+			sourceTree = "<group>";
+		};
+		7B7D38971DE245D3008C6D2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B6E7B241DE1B22400F11BF9 /* Buffalo.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7B7D38981DE245EE008C6D2F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B6E7B271DE1B22400F11BF9 /* Assets.xcassets */,
+				7B6E7B2C1DE1B22400F11BF9 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7B7D38991DE247AB008C6D2F /* Heart */ = {
+			isa = PBXGroup;
+			children = (
+				7B6E7B1D1DE1B22400F11BF9 /* AppDelegate.swift */,
+				7B7D389A1DE24853008C6D2F /* Services */,
+			);
+			path = Heart;
+			sourceTree = "<group>";
+		};
+		7B7D389A1DE24853008C6D2F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7B7D389B1DE24877008C6D2F /* ServicesProvider.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B7D389C1DE24877008C6D2F /* ServicesProvider.swift in Sources */,
 				7B6E7B201DE1B22400F11BF9 /* ViewController.swift in Sources */,
 				7B6E7B1E1DE1B22400F11BF9 /* AppDelegate.swift in Sources */,
 				7B6E7B261DE1B22400F11BF9 /* Buffalo.xcdatamodeld in Sources */,
@@ -420,7 +468,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DVL8GW97S8;
-				INFOPLIST_FILE = Buffalo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Buffalo/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.frizlab.Buffalo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -433,7 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DVL8GW97S8;
-				INFOPLIST_FILE = Buffalo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Buffalo/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.frizlab.Buffalo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -518,6 +566,7 @@
 				7B6E7B471DE1B22400F11BF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B6E7B481DE1B22400F11BF9 /* Build configuration list for PBXNativeTarget "BuffaloTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +575,7 @@
 				7B6E7B4A1DE1B22400F11BF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B6E7B4B1DE1B22400F11BF9 /* Build configuration list for PBXNativeTarget "BuffaloUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +584,7 @@
 				7B6E7B4D1DE1B22400F11BF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
