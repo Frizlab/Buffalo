@@ -7,7 +7,6 @@
  */
 
 import UIKit
-import CoreData
 
 
 
@@ -43,38 +42,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	
 	func applicationWillTerminate(_ application: UIApplication) {
 		/* Called just before the App is terminated by the system. */
-		saveContext()
-	}
-	
-	/* ***********************
-	   MARK: - Core Data Stack
-	   *********************** */
-	
-	lazy var persistentContainer: NSPersistentContainer = {
-		let container = NSPersistentContainer(name: "Buffalo")
-		container.loadPersistentStores { storeDescription, error in
-			if let error = error as NSError? {
-				fatalError("Unresolved error \(error), \(error.userInfo)")
-			}
-		}
-		return container
-	}()
-	
-	/* ********************************
-	   MARK: - Core Data Saving Support
-	   ******************************** */
-	
-	func saveContext () {
-		let context = persistentContainer.viewContext
-		if context.hasChanges {
-			do {
-				try context.save()
-			} catch {
-				let nserror = error as NSError
-				fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
-			}
-		}
 	}
 	
 }
-
