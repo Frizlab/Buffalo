@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	
 	var window: UIWindow?
 	
-	func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+	func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]? = nil) -> Bool {
 		/* Called when application is launched (will not necessarily go to
 		 * foreground, nor necessarily called when app goes to foreground). */
 		return true
